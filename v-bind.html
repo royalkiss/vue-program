@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>v-bind</title>
+</head>
+<body>
+	 <div id="box">
+       <div v-bind:bb="cc">小cc属性</div>
+       <div :aa="dd">小dd属性</div>
+       
+	 </div>
+
+
+<script src="vue.js"></script>
+<script>
+   new Vue({
+      el:"#box",
+      data:{
+      	cc:"axx",
+      	dd:"dvs"
+      },
+      methods:{
+      	sayHi:function(){
+            alert("碰到的事，每一天都不同。有的给我安慰,有的给我笑容")
+
+      	}
+      }  
+   })
+
+</script>
+</body>
+</html>
